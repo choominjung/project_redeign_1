@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+KR:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 /* 노멀라이징 */
 *{
     padding: 0;
@@ -10,7 +16,7 @@ ul,li{
 a{
     color: inherit;
     text-decoration: none;
-    font-family: 'Noto Sans KR', sans-serif ;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 /* 라이브러리 */
 .cell{
@@ -33,49 +39,619 @@ a{
 /* top-bar-wrap 시작 */
 .top-bar-wrap{
     width: 100%;
-    height: 100px;
+    height: 80px;
     position: fixed;
     z-index: 999;
+    background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0) 0%, 
+        rgba(255, 255, 255, 0.25) 25%, 
+        rgba(255, 255, 255, 0.75) 75%,
+        rgba(255, 255, 255, 1) 100% );
 }
 .top-bar-wrap > .top-bar{
     height: 100%;
-    border-bottom: 1px solid black;
 }
 .top-bar-wrap > .top-bar > .logo-box{
-    width: 140px;
-    height: 65px;
+    width: 104px;
+    height: 50px;
 }
 .top-bar-wrap > .top-bar > .logo-box > img{
+    width: 100%;
     margin-left: 25px;
-    margin-top: 17px;
+    margin-top: 15px;
 }
 .top-bar-wrap > .top-bar > .menu-box{
-    width: 590px;
-    height: 100%;
-    line-height: 97px;
+    width: 600px;
+    line-height: 80px;
 }
 .top-bar-wrap > .top-bar > .menu-box > ul > li{
     width: 20%;
-    height: 100%;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 300;
     color: #464646;
-    font-weight: 600;
+    transition: 0.5s;
+}
+.top-bar-wrap > .top-bar > .menu-box > ul > li:hover{
+    color: #0056B8;
+    transform: translateY(10%);
 }
 /* top-bar-wrap 끝 */
+
 /* banner-wrap 시작 */
 .banner-wrap{
     width: 100%;
-    height: 1010px;
+    height: 1080px;
     position: absolute;
+    position: relative;
     top: 0;
-    background-color: #F9F9F9;
 }
 .banner-wrap > .banner-box{
     height: 100%;
-    background-color: #ddd;
+}
+.banner-wrap > .banner-box > .left-box{
+    width: 67%;
+    height: 100%;
+    position: relative;
+}
+.banner-wrap > .banner-box > .left-box > .top-box{
+   position: absolute;
+   color: #464646;
+   top: 336px;
+   margin-left: 73px;
+   font-size: 70px;
+   font-family: 'OTWelcomeRA';
+   letter-spacing: -0.05em;
+}
+.banner-wrap > .banner-box > .left-box > .top-box > .text1{
+    margin-bottom: 25px;
+}
+.banner-wrap > .banner-box > .left-box > .top-box > .text2{
+    margin-bottom: 10px;
+}
+.banner-wrap > .banner-box > .left-box > .top-box > .box{
+    width: 45px;
+    height: 3px;
+    background-color: #0056B8;
+    margin-left: 5px;
+}
+/* .animation {
+    animation-name: box;
+    animation-duration: 0.8s;
+    animation-delay: 2.5s;
+    animation-timing-function: ease;
+  }
+  
+  @keyframes box{
+    0%{
+      width: 0px;
+    }
+    100%{
+      width: 45px;
+    }
+  } */
+.banner-wrap > .banner-box > .left-box > .mid-txt{
+    position: absolute;
+    color: #464646;
+    top: 581px;
+    margin-left: 73px;
+    font-size: 26px;
+    letter-spacing: 0.2em;
+}
+.banner-wrap > .banner-box > .left-box > .mid-btn-box{
+    position: absolute;
+    top: 659px;
+    margin-left: 197px;
+    font-size: 16px;
+    width: 315px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    cursor : pointer ;
+    user-select : none ;
+}
+.banner-wrap > .banner-box > .left-box > .mid-btn-box > .box1{
+    width: 150px;
+    border-radius: 30px;
+    background-color: #0056B8;
+    transition: 0.5s;
+}
+.banner-wrap > .banner-box > .left-box > .mid-btn-box > .box1:hover{
+    background-color: #ccc;
+    color: #0056B8;
+}
+.banner-wrap > .banner-box > .left-box > .mid-btn-box > .box2{
+    width: 150px;
+    border-radius: 30px;
+    background-color: #0056B8;
+    transition: 0.5s;
+}
+.banner-wrap > .banner-box > .left-box > .mid-btn-box > .box2:hover{
+    background-color: #ccc;
+    color: #0056B8;
+}
+.banner-wrap > .banner-box > .left-box > .btm-box{
+    position: absolute;
+    top: 749px;
+    margin-left: 73px;
+    color: #464646;
+}
+.banner-wrap > .banner-box > .left-box > .btm-box > .icon1-box > .icon{
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/렌즈사진1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+.banner-wrap > .banner-box > .left-box > .btm-box > .icon1-box > p{
+    font-size: 18px;
+    line-height: 30px;
+}
+.banner-wrap > .banner-box > .left-box > .btm-box > .icon1-box{
+    margin-bottom: 15px;
+}
+.banner-wrap > .banner-box > .left-box > .btm-box > .icon2-box > .icon{
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/렌즈사진2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+.banner-wrap > .banner-box > .left-box > .btm-box > .icon2-box > p{
+    font-size: 18px;
+    line-height: 30px;
+}
+.banner-wrap > .banner-box > .right-box{
+    width: 33%;
+    height: 100%;
+}
+.banner-wrap > .banner-box > .right-box > .img-box{
+    position: absolute;
+    top: 190px;
+}
+.banner-wrap > .banner-box > .right-box > .img-box > img{
+    width: 700px;
+    height: 700px;
+}
+/* banner-wrap 끝 */
+
+/* section01 시작 */
+.section01{
+    position: absolute;
+    width: 100%;
+    height: 641px;
+    position: relative;
+}
+.section01 > .mk-box{
+    height: 430px;
+    background-color: #F7F7F7;
+    position: relative;
+}
+.section01 > .mk-box > .txt-box > p{
+    font-size: 36px;
+    font-weight: 300;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #464646;
+}
+.section01 > .mk-box > .txt-box > .box{
+    width: 35px;
+    height: 3px;
+    background-color: #0056B8;
+    position: absolute;
+    top: 152px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section01 > .mk-box > .video-box{
+    width: 600px;
+    height: 336px;
+    position: absolute;
+    top: 205px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* section01 끝 */
+
+/* section02 시작 */
+.section02{
+    width: 100%;
+    height: 440px;
+    background-color: #0056B8;
+    position: absolute;
+    position: relative;
+}
+.section02 > .con-box{
+    height: 100%;
+}
+.section02 > .con-box > .left-box{
+    width: 50%;
+    height: 100%;
+}
+.section02 > .con-box > .left-box > img{
+    margin-left: 33px;
+}
+.section02 > .con-box > .right-box{
+    width: 50%;
+    height: 100%;
+    color: white;
+}
+.section02 > .con-box > .right-box > h3{
+    margin-top: 75px;
+    margin-left: 121px;
+    font-size: 55px;
+    font-weight: 400;
+    letter-spacing: -0.08em;
+    width: 57%;
+}
+.section02 > .con-box > .right-box > p{
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: 121px;
+}
+.section02 > .con-box > .right-box > .btn-box{
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 25px;
+    margin-left: 121px;
+    color: #0056B8;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    cursor : pointer ;
+    user-select : none ;
+    transition: 0.5s;
+}
+.section02 > .con-box > .right-box > .btn-box:hover{
+    background-color: #ccc;
+}
+/* section02 끝 */
+
+/* section03 시작 */
+.section03{
+    width: 100%;
+    height: 781px;
+    position: absolute;
+    position: relative;
+}
+.section03 > .box{
+    height: 100%;
+    text-align: center;
+    color: #464646;
+    position: relative;
+}
+.section03 > .box > .txt-box01{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section03 > .box > .txt-box01 > .top-txt{
+    font-size: 28px;
+}
+.section03 > .box > .txt-box01 > .mid-box{
+    width: 35px;
+    height: 3px;
+    background-color: #0056B8;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section03 > .box > .txt-box01 > .btm-txt{
+    font-size: 18px;
+    margin-top: 50px;
+    letter-spacing: -0.04em;
+    line-height: 1.5em;
+}
+.section03 > .box > .txt-box02{
+    position: absolute;
+    top: 352px;
+    left: 50%;
+    transform: translateX(-50%);
+}.section03 > .box > .txt-box02 > .top-txt{
+    font-size: 28px;
+}
+.section03 > .box > .txt-box02 > .mid-box{
+    width: 35px;
+    height: 3px;
+    background-color: #0056B8;
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section03 > .box > .txt-box02 > .btm-txt{
+    width: 1200px;
+    height: 205px;
+    margin-top: 70px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section03 > .box > .txt-box02 > .btm-txt > .left-box{
+    width: 400px;
+    height: 205px;
+}
+.section03 > .box > .txt-box02 > .btm-txt > .left-box > .top-icon{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+.section03 > .box > .txt-box02 > .btm-txt > .left-box > .top-icon > img{
+    width: 100%;
+}
+.section03 > .box > .txt-box02 > .btm-txt > .left-box > .mid-txt{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: -0.04em;
+}
+.section03 > .box > .txt-box02 > .btm-txt > .left-box > .btm-txt{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.section03 > .box > .txt-box02 > .btm-txt > .mid-box{
+    width: 400px;
+    height: 205px;
+}
+.section03 > .box > .txt-box02 > .btm-txt > .mid-box > .top-icon{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+.section03 > .box > .txt-box02 > .btm-txt > .mid-box > .top-icon > img{
+    width: 100%;
+}
+.section03 > .box > .txt-box02 > .btm-txt > .mid-box > .mid-txt{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: -0.04em;
+}
+.section03 > .box > .txt-box02 > .btm-txt > .mid-box > .btm-txt{
+    font-size: 16px;
+    margin-top: 10px;
 }
 
+.section03 > .box > .txt-box02 > .btm-txt > .right-box{
+    width: 400px;
+    height: 205px;
+}
+.section03 > .box > .txt-box02 > .btm-txt > .right-box > .top-icon{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+.section03 > .box > .txt-box02 > .btm-txt > .right-box > .top-icon > img{
+    width: 100%;
+}
+.section03 > .box > .txt-box02 > .btm-txt > .right-box > .mid-txt{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    letter-spacing: -0.04em;
+}
+.section03 > .box > .txt-box02 > .btm-txt > .right-box > .btm-txt{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.section03 > .box > .more-box{
+    width: 123px;
+    height: 28px;
+    border: 1px solid #464646;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 28px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor : pointer ;
+    user-select : none ;
+}
+/* section03 끝 */
 
+/* section04 시작 */
+.section04{
+    width: 100%;
+    height: 739px;
+    position: absolute;
+    position: relative;
+}
+.section04 > .box{
+    height: 100%;
+    color: #464646;
+}
+.section04 > .box > .news-box{
+    width: 1200px;
+    height: 29px;
+    position: absolute;
+    margin-top: 100px;
+}
+.section04 > .box > .news-box > .left-line{
+    width: 470px;
+    height: 2px;
+    margin-top: 13.5px;
+    background-color: #e5e5e5;
+}
+.section04 > .box > .news-box > .mid-txt{
+    width: 260px;
+    height: 29px;
+    text-align: center;
+    font-size: 20px;
+}
+.section04 > .box > .news-box > .right-line{
+    width: 470px;
+    height: 2px;
+    margin-top: 13.5px;
+    background-color: #e5e5e5;
+}
+.section04 > .box > .txt02{
+    position: absolute;
+    margin-top: 129px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #646464;
+}
+/* 물어볼것
+    1. 사진사이 간격
+    2. dots 갯수조정
+    3. dots 모양수정
+*/
+.section04 > .box > .slick-box{
+    position: absolute;
+    margin-top: 199px;
+    width: 1200px;
+    height: 285px;
+}
+.section04 > .box > .slick-box .content > img{
+    width: 100%;
+}
+.slick-box .slick-dots{
+    bottom: -60px;
+}
+.slick-box .slick-dots li button:before{
+    color:#ccc;
+}
+.slick-box .slick-dots li.slick-active button:before{
+    color: #464646;
+    font-size: medium;
+}
+.section04 > .box > .insta-box{
+    width: 123px;
+    height: 28px;
+    border: 1px solid #464646;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 28px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor : pointer ;
+    user-select : none ;
+}
+/* section04 끝 */
 
-/* banner-wrap 끝 */
+/* section05 시작 */
+.section05{
+    width: 100%;
+    height: 484px;
+    position: absolute;
+    color: #464646;
+    position: relative;
+    background-color: #F9F9F9;
+}
+.section05 > .box{
+    height: 100%;
+}
+.section05 > .box > .txt-box{
+    position: absolute;
+    margin-top: 52px;
+    margin-left: 73px;
+}
+.section05 > .box > .txt-box > .top-txt{
+    color: #43B02A;
+    font-size: 60px;
+    letter-spacing: -0.04em;
+}
+.section05 > .box > .txt-box > .mid-txt{
+    font-size: 28px;
+    margin-top: 20px;
+    letter-spacing: -0.04em;
+}
+.section05 > .box > .txt-box > .btm-txt{
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.4em;
+}
+.section05 > .box > .txt-box > .btn-box{
+    width: 180px;
+    height: 50px;
+    background-color: #43B02A;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 30px;
+    color: white;
+    margin-top: 20px;
+    cursor : pointer ;
+    user-select : none ;
+    transition: 0.5s;
+}
+.section05 > .box > .txt-box > .btn-box:hover{
+    background-color: #ccc;
+    color: #43B02A;
+}
+.section05 > .bg-img{
+    position: absolute;
+    top: 0;
+    left: 55%;
+    transform: translateX(-50%);
+}
+/* section05 끝 */
+
+/* footer 시작 */
+.footer{
+    width: 100%;
+    height: 380px;
+    position: absolute;
+    color: #464646;
+}
+.footer > .box{
+    height: 100%;
+}
+.footer > .box > .box02{
+    width: 1054px;
+    height: 280px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 73px;
+}
+.footer > .box > .box02 > .img-box >.logo-box{
+    width: 153px;
+    height: 27px;
+}
+.footer > .box > .box02 > .img-box > .logo-box > img{
+    width: 100%;
+}
+.footer > .box > .box02 > .img-box > .icon-box{
+    width: 155px;
+    height: 19px;
+}
+.footer > .box > .box02 > .img-box > .icon-box > ul > .icon01{
+    margin-right: 40px;
+}
+.footer > .box > .box02 > .txt01{
+    margin-top: 30px;
+    font-size: 16px;
+}
+.footer > .box > .box02 > .txt02{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #7B7B7B;
+    letter-spacing: -0.08em;
+}
+.footer > .box > .box02 > .txt03{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #7B7B7B;
+}
+.footer > .box > .box02 > .txt04{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #7B7B7B;
+}
+/* footer 끝 */
+
