@@ -116,21 +116,6 @@ a{
     background-color: #0056B8;
     margin-left: 5px;
 }
-/* .animation {
-    animation-name: box;
-    animation-duration: 0.8s;
-    animation-delay: 2.5s;
-    animation-timing-function: ease;
-  }
-  
-  @keyframes box{
-    0%{
-      width: 0px;
-    }
-    100%{
-      width: 45px;
-    }
-  } */
 .banner-wrap > .banner-box > .left-box > .mid-txt{
     position: absolute;
     color: #464646;
@@ -654,4 +639,26 @@ a{
     color: #7B7B7B;
 }
 /* footer 끝 */
+
+/* btn 시작 */
+.btn{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+  }
+  .btn > img{
+      width: 100%;
+  }
+  .btn.active{
+    opacity: 1;
+    visibility: visible;
+  }
+
+/* btn 끝 */
 
