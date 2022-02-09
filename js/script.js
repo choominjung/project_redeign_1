@@ -2,15 +2,17 @@
 
 $(document).ready(function(){
 
-    $('.slick-box').slick({
-
-        autoplay : true ,
-        autoplaySpeed : 3000 ,
-        arrows : true ,
-        dots : true ,
-        rows : 1 ,
-        slidesToShow : 4 ,
-    })
+    const swiper = new Swiper('.section04 > .box > .swiper', {
+      loop: true,
+      slidesPerView: 4, 
+      spaceBetween: 20, 
+      slidesPerGroup: 4,
+    
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: 'true',
+      },
+    },
 
     $(".btn").click(function(){
         $("html,body").animate({

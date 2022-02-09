@@ -492,25 +492,16 @@ a{
     color: #646464;
 }
 /* 수정사항 */
-.section04 > .box > .slick-box{
+.section04 > .box > .swiper{
     position: absolute;
     margin-top: 199px;
-    width: 1200px;
+    width: 285px;
     height: 285px;
 }
-.section04 > .box > .slick-box .content > img{
+.section04 > .box > .swiper > .swiper-wrapper > .swiper-slide > img{
     width: 100%;
 }
-.slick-box .slick-dots{
-    bottom: -60px;
-}
-.slick-box .slick-dots li button:before{
-    color:#ccc;
-}
-.slick-box .slick-dots li.slick-active button:before{
-    color: #464646;
-    font-size: medium;
-}
+/* 수정사항 끝*/
 .section04 > .box > .insta-box{
     width: 123px;
     height: 28px;
