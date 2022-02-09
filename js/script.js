@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
 
     $('.slick-box').slick({
@@ -28,7 +30,10 @@ $(document).ready(function(){
       }
       console.log(test);
       
+      AOS.init();
 
 
 });
+
+
 

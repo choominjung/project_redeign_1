@@ -490,11 +490,7 @@ a{
     font-size: 14px;
     color: #646464;
 }
-/* 물어볼것
-    1. 사진사이 간격
-    2. dots 갯수조정
-    3. dots 모양수정
-*/
+/* 수정사항 */
 .section04 > .box > .slick-box{
     position: absolute;
     margin-top: 199px;
