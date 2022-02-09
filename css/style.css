@@ -52,11 +52,12 @@ a{
 .top-bar-wrap > .top-bar{
     height: 100%;
 }
-.top-bar-wrap > .top-bar > .logo-box{
+.top-bar-wrap > .top-bar > .logo-box > a {
+    display:block;
     width: 104px;
     height: 50px;
 }
-.top-bar-wrap > .top-bar > .logo-box > img{
+.top-bar-wrap > .top-bar > .logo-box > a > img{
     width: 100%;
     margin-left: 25px;
     margin-top: 15px;

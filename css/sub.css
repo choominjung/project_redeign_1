@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
+@font-face {
+    font-family: 'OTWelcomeRA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 노멀라이징 */
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+ul,li{
+    list-style: none;
+}
+/* 라이브러리 */
+.cell{
+    float: left;
+}
+.cell-r{
+    float: right;
+}
+.row::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.con{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 스타일 */
+
+/* top-bar-wrap 시작 */
+.top-bar-wrap{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 999;
+    background: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0) 0%, 
+        rgba(255, 255, 255, 0.25) 25%, 
+        rgba(255, 255, 255, 0.75) 75%,
+        rgba(255, 255, 255, 1) 100% );
+}
+.top-bar-wrap > .top-bar{
+    height: 100%;
+}
+.top-bar-wrap > .top-bar > .logo-box > a {
+    display: block;
+    width: 104px;
+    height: 50px;
+}
+.top-bar-wrap > .top-bar > .logo-box > a > img{
+    width: 100%;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.top-bar-wrap > .top-bar > .menu-box{
+    width: 600px;
+    line-height: 80px;
+}
+.top-bar-wrap > .top-bar > .menu-box > ul > li{
+    width: 20%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    color: #464646;
+    transition: 0.5s;
+}
+.top-bar-wrap > .top-bar > .menu-box > ul > li:first-child{
+    color: #0056B8;
+}
+.top-bar-wrap > .top-bar > .menu-box > ul > li:hover{
+    color: #0056B8;
+    transform: translateY(10%);
+}
+/* top-bar-wrap 끝 */
+
+/* section 시작 */
+.section{
+    width: 100%;
+    height: 1437px;
+    color: #464646;
+}
+.section > .box{
+    height: 100%;
+    position: relative;
+}
+.section > .box > .product{
+    width: 620px;
+    height: 1100px;
+    position: absolute;
+    margin-top: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section > .box > .product > p{
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section > .box > .product > .box{
+    width: 35px;
+    height: 3px;
+    background-color: #0056B8;
+    margin: 0 auto;
+}
+.section > .box > .product > .info-box{
+    width: 588px;
+    height: 933px;
+    margin-top: 100px;
+}
+.section > .box > .product > .info-box > .icon01{
+    margin-bottom: 50px;
+}
+.section > .box > .product > .info-box > .icon01 > .box1{
+    width: 93px;
+    height: 114px;
+}
+.section > .box > .product > .info-box > .icon01 > .box1 > .img{
+    width: 93px;
+    height: 88px;
+}
+.section > .box > .product > .info-box > .icon01 > .box1 > .txt{
+    width: 67px;
+    height: 26px;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.section > .box > .product > .info-box > .icon01 > .box2{
+    margin-left: 35px;
+    margin-top: 34px;
+    font-size: 16px;
+}
+
+.section > .box > .product > .info-box > .icon02{
+    margin-bottom: 50px;
+}
+.section > .box > .product > .info-box > .icon02 > .box1{
+    width: 93px;
+    height: 114px;
+}
+.section > .box > .product > .info-box > .icon02 > .box1 > .img{
+    width: 93px;
+    height: 88px;
+}
+.section > .box > .product > .info-box > .icon02 > .box1 > .txt{
+    width: 67px;
+    height: 26px;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.section > .box > .product > .info-box > .icon02 > .box2{
+    margin-left: 35px;
+    margin-top: 34px;
+    font-size: 16px;
+}
+
+.section > .box > .product > .info-box > .icon03{
+    margin-bottom: 50px;
+}
+.section > .box > .product > .info-box > .icon03 > .box1{
+    width: 93px;
+    height: 114px;
+}
+.section > .box > .product > .info-box > .icon03 > .box1 > .img{
+    width: 93px;
+    height: 88px;
+}
+.section > .box > .product > .info-box > .icon03 > .box1 > .txt{
+    width: 67px;
+    height: 26px;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.section > .box > .product > .info-box > .icon03 > .box2{
+    margin-left: 35px;
+    margin-top: 21px;
+    font-size: 16px;
+}
+
+.section > .box > .product > .info-box > .icon04{
+    margin-bottom: 50px;
+}
+.section > .box > .product > .info-box > .icon04 > .box1{
+    width: 93px;
+    height: 114px;
+}
+.section > .box > .product > .info-box > .icon04 > .box1 > .img{
+    width: 93px;
+    height: 88px;
+}
+.section > .box > .product > .info-box > .icon04 > .box1 > .txt{
+    width: 67px;
+    height: 26px;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.section > .box > .product > .info-box > .icon04 > .box2{
+    margin-left: 35px;
+    margin-top: 34px;
+    font-size: 16px;
+}
+
+
+.section > .box > .product > .info-box > .icon05{
+    margin-bottom: 50px;
+}
+.section > .box > .product > .info-box > .icon05 > .box1{
+    width: 93px;
+    height: 114px;
+}
+.section > .box > .product > .info-box > .icon05 > .box1 > .img{
+    width: 93px;
+    height: 88px;
+}
+.section > .box > .product > .info-box > .icon05 > .box1 > .txt{
+    width: 67px;
+    height: 26px;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.section > .box > .product > .info-box > .icon05 > .box2{
+    margin-left: 35px;
+    margin-top: 34px;
+    font-size: 16px;
+}
+
+
+.section > .box > .product > .info-box > .icon06{
+    margin-bottom: 50px;
+}
+.section > .box > .product > .info-box > .icon06 > .box1{
+    width: 93px;
+    height: 114px;
+}
+.section > .box > .product > .info-box > .icon06 > .box1 > .img{
+    width: 93px;
+    height: 88px;
+}
+.section > .box > .product > .info-box > .icon06 > .box1 > .txt{
+    width: 67px;
+    height: 26px;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.section > .box > .product > .info-box > .icon06 > .box2{
+    margin-left: 35px;
+    margin-top: 44px;
+    font-size: 16px;
+}
+/* section 끝 */
+
+/* footer 시작 */
+.footer{
+    width: 100%;
+    height: 380px;
+    position: absolute;
+    color: #464646;
+}
+.footer > .box{
+    height: 100%;
+}
+.footer > .box > .box02{
+    width: 1054px;
+    height: 280px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 73px;
+}
+.footer > .box > .box02 > .img-box >.logo-box{
+    width: 153px;
+    height: 27px;
+}
+.footer > .box > .box02 > .img-box > .logo-box > img{
+    width: 100%;
+}
+.footer > .box > .box02 > .img-box > .icon-box{
+    width: 155px;
+    height: 19px;
+}
+.footer > .box > .box02 > .img-box > .icon-box > ul > .icon01{
+    margin-right: 40px;
+}
+.footer > .box > .box02 > .txt01{
+    margin-top: 30px;
+    font-size: 16px;
+}
+.footer > .box > .box02 > .txt02{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #7B7B7B;
+    letter-spacing: -0.08em;
+}
+.footer > .box > .box02 > .txt03{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #7B7B7B;
+}
+.footer > .box > .box02 > .txt04{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #7B7B7B;
+}
+/* footer 끝 */

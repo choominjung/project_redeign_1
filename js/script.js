@@ -23,7 +23,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
       
       var test = $(window).scrollTop();
-      if(test >= 1500){
+      if(test >= 1400){
         $(".btn").addClass("active")
       }else if(test==0){
         $(".btn").removeClass("active")
