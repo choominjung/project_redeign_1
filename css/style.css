@@ -13,7 +13,7 @@
 ul,li{
     list-style: none;
 }
-a{
+a {
     color: inherit;
     text-decoration: none;
     font-family: 'Noto Sans KR', sans-serif;
@@ -137,6 +137,7 @@ a{
     line-height: 50px;
     cursor : pointer ;
     user-select : none ;
+    font-weight: 400;
 }
 .banner-wrap > .banner-box > .left-box > .mid-btn-box > .box1{
     width: 150px;
@@ -495,11 +496,20 @@ a{
 .section04 > .box > .swiper{
     position: absolute;
     margin-top: 199px;
-    width: 285px;
+    width: 1200px;
     height: 285px;
+    padding-bottom:50px;
 }
 .section04 > .box > .swiper > .swiper-wrapper > .swiper-slide > img{
     width: 100%;
+}
+.section04 .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+    width:12px;
+    height:12px;
+}
+.section04 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    border:2px solid #464646 !important;
+    background-color:white;
 }
 /* 수정사항 끝*/
 .section04 > .box > .insta-box{
