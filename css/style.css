@@ -638,11 +638,11 @@ a{
 
 /* btn 시작 */
 .btn{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     position: fixed;
-    bottom: 100px;
-    right: 20px;
+    bottom: 150px;
+    right: 40px;
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
