@@ -9,6 +9,8 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
 }
 ul,li{
     list-style: none;
@@ -102,13 +104,14 @@ a {
    top: 336px;
    margin-left: 73px;
    font-size: 70px;
-   font-family: 'OTWelcomeRA';
    letter-spacing: -0.05em;
 }
 .banner-wrap > .banner-box > .left-box > .top-box > .text1{
     margin-bottom: 25px;
+    font-family: 'OTWelcomeRA';
 }
 .banner-wrap > .banner-box > .left-box > .top-box > .text2{
+    font-family: 'OTWelcomeRA';
     margin-bottom: 10px;
 }
 .banner-wrap > .banner-box > .left-box > .top-box > .box{
@@ -120,15 +123,16 @@ a {
 .banner-wrap > .banner-box > .left-box > .mid-txt{
     position: absolute;
     color: #464646;
-    top: 581px;
+    top: 584px;
     margin-left: 73px;
-    font-size: 26px;
-    letter-spacing: 0.2em;
+    font-size: 22px;
+    letter-spacing: 0.3em;
+    font-weight: 400;
 }
 .banner-wrap > .banner-box > .left-box > .mid-btn-box{
     position: absolute;
     top: 659px;
-    margin-left: 197px;
+    margin-left: 161px;
     font-size: 16px;
     width: 315px;
     height: 50px;
@@ -492,15 +496,14 @@ a {
     font-size: 14px;
     color: #646464;
 }
-/* 수정사항 */
 .section04 > .box > .swiper{
     position: absolute;
     margin-top: 199px;
     width: 1200px;
     height: 285px;
-    padding-bottom:50px;
+    padding-bottom:60px;
 }
-.section04 > .box > .swiper > .swiper-wrapper > .swiper-slide > img{
+.section04 > .box > .swiper > .swiper-wrapper > .swiper-slide > a > img{
     width: 100%;
 }
 .section04 .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
@@ -508,10 +511,9 @@ a {
     height:12px;
 }
 .section04 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    border:2px solid #464646 !important;
+    border:2px solid #464646;
     background-color:white;
 }
-/* 수정사항 끝*/
 .section04 > .box > .insta-box{
     width: 123px;
     height: 28px;

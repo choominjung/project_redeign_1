@@ -7,6 +7,10 @@ $(document).ready(function(){
     slidesPerView: 4, 
     spaceBetween: 20, 
     slidesPerGroup: 4,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction : true,
+    },
   
     pagination: {
       el: '.swiper-pagination',
